@@ -79,17 +79,17 @@ const useStyles = makeStyles(theme => createStyles({
   }
 }))
 
-const SignIn = () => {
+export const SignIn = () => {
   const classes = useStyles()
-  const [visible, setVisible] = useState(null)
-  const openSignIn = () => {
+  const [visible, setVisible] = useState<'signIn' | 'signUp'>()
+  const openSignIn = (): void => {
     setVisible('signIn')
   }
-  const openSignUp = () => {
+  const openSignUp = (): void => {
     setVisible('signUp')
   }
-  const closeModalBlock = () => {
-    setVisible(null)
+  const closeModalBlock = (): void => {
+    setVisible(undefined)
   }
   return (<div className={classes.wrapper}>
       <section className={classes.blueSide}>
@@ -198,5 +198,3 @@ const SignIn = () => {
 
     </div>);
 };
-
-export default SignIn;
