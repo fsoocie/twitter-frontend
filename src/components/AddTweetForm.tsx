@@ -7,9 +7,12 @@ import IconButton from '@material-ui/core/IconButton';
 import TextareaAutosize from '@material-ui/core/TextareaAutosize';
 import ImageOutlinedIcon from '@material-ui/icons/ImageOutlined';
 import EmojiIcon from '@material-ui/icons/SentimentSatisfiedOutlined';
-import { useHomeStyles } from '../pages/Home/theme';
-import {useDispatch} from "react-redux";
-import {fetchAddTweet} from "../store/ducks/tweet/actionCreators";
+import {useHomeStyles} from '../pages/Home/theme';
+import {useDispatch, useSelector} from "react-redux";
+import {fetchAddTweet} from '../store/ducks/tweets/actionCreators';
+import Alert from '@material-ui/lab/Alert'
+import {selectAddTweetState} from "../store/ducks/tweets/selectors";
+import {AddTweetsState} from "../store/ducks/tweets/contracts/state";
 
 interface AddTweetFormProps {
   classes: ReturnType<typeof useHomeStyles>;
@@ -26,6 +29,7 @@ export const AddTweetForm: React.FC<AddTweetFormProps> = ({
   const textLimitPercent = Math.round((text.length / 280) * 100);
   const textCount = MAX_LENGTH - text.length;
   const dispatch = useDispatch()
+  const addTweetState = useSelector(selectAddTweetState)
 
   const handleChangeTextarea = (e: React.FormEvent<HTMLTextAreaElement>): void => {
     if (e.currentTarget) {
@@ -87,13 +91,17 @@ export const AddTweetForm: React.FC<AddTweetFormProps> = ({
           )}
           <Button
             onClick={handleClickAddTweet.bind(null, text)}
-            disabled={text.length >= MAX_LENGTH}
+            disabled={
+              addTweetState === AddTweetsState.LOADING ||
+              !text ||
+              text.length >= MAX_LENGTH}
             color="primary"
             variant="contained">
-            Твитнуть
+            {addTweetState === AddTweetsState.LOADING? <CircularProgress color='inherit' size={16} /> : 'Твитнуть'}
           </Button>
         </div>
       </div>
+      {addTweetState === AddTweetsState.ERROR && <Alert severity="error">Ошибка при добавлении твита <span aria-label="cry-smile" role="img">😓</span></Alert>}
     </div>
   );
 };

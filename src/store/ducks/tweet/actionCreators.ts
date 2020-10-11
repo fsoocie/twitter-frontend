@@ -1,9 +1,6 @@
-import {AddTweetState, LoadingState, TweetState} from './contracts/state';
+import {LoadingState, TweetState} from './contracts/state';
 import {
-  AddTweetActionInterface,
-  FetchAddTweetActionInterface,
   FetchTweetDataActionInterface,
-  SetAddTweetState,
   SetTweetDataActionInterface,
   SetTweetLoadingStateActionInterface,
   TweetActionsType
@@ -27,17 +24,3 @@ export const fetchTweetData = (payload: string): FetchTweetDataActionInterface =
   payload
 });
 
-export const fetchAddTweet = (payload: string): FetchAddTweetActionInterface => ({
-  type: TweetActionsType.FETCH_ADD_TWEET,
-  payload
-})
-
-export const addTweet = (payload: TweetState['tweetData']): AddTweetActionInterface => ({
-  type: TweetActionsType.ADD_TWEET,
-  payload
-})
-
-export const setAddTweetState = (payload: AddTweetState): SetAddTweetState => ({
-  type: TweetActionsType.SET_ADD_TWEET_STATE,
-  payload
-})

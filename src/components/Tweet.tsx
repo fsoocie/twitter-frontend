@@ -10,8 +10,8 @@ import { useHomeStyles } from '../pages/Home/theme';
 import { Link } from 'react-router-dom';
 
 interface Tweet {
-  text: string;
   _id: string;
+  text: string;
   user: {
     fullname: string;
     username: string;
