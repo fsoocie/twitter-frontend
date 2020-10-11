@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="07d9bee2-14dc-4d2e-ad52-e5bd0d519e53" name="Default Changelist" comment="added fetching actual-tags, fullTweet">
+      <change afterPath="$PROJECT_DIR$/src/store/ducks/tweet/contracts/actionCreators.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AddTweetForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddTweetForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/api/tweetsApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/api/tweetsApi.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/ducks/tweet/actionCreators.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/ducks/tweet/actionCreators.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/ducks/tweet/contracts/state.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/ducks/tweet/contracts/state.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/ducks/tweet/reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/ducks/tweet/reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/ducks/tweet/sagas.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/ducks/tweet/sagas.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/ducks/tweet/selectors.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/ducks/tweet/selectors.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1iPYOPzqWvEXrzxZGzlnNUxcyTx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/store/ducks" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="ts.external.directory.path" value="D:\Development\Projects\twitter\twitter-frontend\node_modules\typescript\lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Development\Projects\twitter\twitter-frontend\src\store\ducks" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="07d9bee2-14dc-4d2e-ad52-e5bd0d519e53" name="Default Changelist" comment="" />
+      <created>1601810665570</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601810665570</updated>
+      <workItem from="1601810667954" duration="10627000" />
+      <workItem from="1601908390853" duration="929000" />
+      <workItem from="1602166143125" duration="7539000" />
+      <workItem from="1602318930499" duration="4766000" />
+    </task>
+    <task id="LOCAL-00001" summary="added redux, finished home page html-coding">
+      <created>1601811196940</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1601811196940</updated>
+    </task>
+    <task id="LOCAL-00002" summary="added fetching actual-tags, fullTweet">
+      <created>1602186961696</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1602186961696</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added redux, finished home page html-coding" />
+    <MESSAGE value="added fetching actual-tags, fullTweet" />
+    <option name="LAST_COMMIT_MESSAGE" value="added fetching actual-tags, fullTweet" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="160" y="0" key="SettingsEditor" timestamp="1601908629651">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="160" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1601908629651" />
+    <state x="261" y="80" key="Vcs.Push.Dialog.v2" timestamp="1602187034268">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="261" y="80" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1602187034268" />
+  </component>
+</project>

@@ -8,6 +8,8 @@ import TextareaAutosize from '@material-ui/core/TextareaAutosize';
 import ImageOutlinedIcon from '@material-ui/icons/ImageOutlined';
 import EmojiIcon from '@material-ui/icons/SentimentSatisfiedOutlined';
 import { useHomeStyles } from '../pages/Home/theme';
+import {useDispatch} from "react-redux";
+import {fetchAddTweet} from "../store/ducks/tweet/actionCreators";
 
 interface AddTweetFormProps {
   classes: ReturnType<typeof useHomeStyles>;
@@ -23,15 +25,17 @@ export const AddTweetForm: React.FC<AddTweetFormProps> = ({
   const [text, setText] = React.useState<string>('');
   const textLimitPercent = Math.round((text.length / 280) * 100);
   const textCount = MAX_LENGTH - text.length;
+  const dispatch = useDispatch()
 
-  const handleChangeTextare = (e: React.FormEvent<HTMLTextAreaElement>): void => {
+  const handleChangeTextarea = (e: React.FormEvent<HTMLTextAreaElement>): void => {
     if (e.currentTarget) {
       setText(e.currentTarget.value);
     }
   };
 
-  const handleClickAddTweet = (): void => {
+  const handleClickAddTweet = (text: string): void => {
     setText('');
+    dispatch(fetchAddTweet(text))
   };
 
   return (
@@ -43,7 +47,7 @@ export const AddTweetForm: React.FC<AddTweetFormProps> = ({
           src="https://pbs.twimg.com/profile_images/796061890451542016/J-O1AguD_bigger.jpg"
         />
         <TextareaAutosize
-          onChange={handleChangeTextare}
+          onChange={handleChangeTextarea}
           className={classes.addFormTextarea}
           placeholder="Что происходит?"
           value={text}
@@ -82,7 +86,7 @@ export const AddTweetForm: React.FC<AddTweetFormProps> = ({
             </>
           )}
           <Button
-            onClick={handleClickAddTweet}
+            onClick={handleClickAddTweet.bind(null, text)}
             disabled={text.length >= MAX_LENGTH}
             color="primary"
             variant="contained">

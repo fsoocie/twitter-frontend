@@ -5,6 +5,12 @@ export enum LoadingState {
   NEVER = 'NEVER',
 }
 
+export enum AddTweetState {
+  LOADED = 'LOADED',
+  LOADING = 'LOADING',
+  ERROR = 'ERROR',
+}
+
 export interface TweetData {
   _id: string;
   text: string;
@@ -18,4 +24,5 @@ export interface TweetData {
 export interface TweetState {
   tweetData: TweetData | undefined;
   loadingState: LoadingState;
+  addTweetState: AddTweetState;
 }
