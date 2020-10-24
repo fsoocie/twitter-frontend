@@ -80,15 +80,8 @@ export const useHomeStyles = makeStyles((theme: Theme) => ({
     },
   },
   fullTweet: {
-    paddingTop: 15,
-    paddingLeft: 15,
-    display: 'flex',
-    flexDirection: 'column',
-    '& a': {
-      display: 'flex',
-      color: 'inherit',
-      textDecoration: 'none'
-    }
+    padding: 22,
+    paddingBottom: 0,
   },
   fullTweetUserDescribe: {
     display: 'flex',
@@ -96,12 +89,17 @@ export const useHomeStyles = makeStyles((theme: Theme) => ({
     padding: 0
   },
   fullTweetText: {
-    marginTop: 18,
-    fontSize: 20,
+    fontSize: 24,
+    marginTop: 20,
+    marginBottom: 20,
     lineHeight: 1.3125,
-    wordBreak: 'break-word'
+    wordBreak: 'break-word',
   },
-  tweet: {
+  tweetsHeaderUser: {
+    display: 'flex',
+    alignItems: 'center',
+  },
+    tweet: {
     display: 'flex',
     cursor: 'pointer',
     paddingTop: 15,
@@ -218,4 +216,14 @@ export const useHomeStyles = makeStyles((theme: Theme) => ({
     display: 'flex',
     alignItems: 'center',
   },
+  fullTweetFooter: {
+    margin: '0 auto',
+    borderTop: '1px solid #E6ECF0',
+    left: 0,
+    maxWidth: '100%',
+    justifyContent: 'space-around',
+    padding: '2px 0',
+    marginTop: 20,
+  }
+
 }));

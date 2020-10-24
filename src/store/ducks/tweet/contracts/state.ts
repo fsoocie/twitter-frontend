@@ -9,6 +9,7 @@ export enum LoadingState {
 export interface TweetData {
   _id: string;
   text: string;
+  createdAt: string;
   user: {
     fullname: string;
     username: string;

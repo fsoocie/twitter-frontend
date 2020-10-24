@@ -2,7 +2,6 @@ import { call, put, takeLatest } from 'redux-saga/effects';
 import { TweetsApi } from '../../../services/api/tweetsApi';
 import { setTweets, setTweetsLoadingState, TweetsActionsType, FetchAddTweetActionInterface, setAddTweetState, addTweet } from './actionCreators';
 import { LoadingState, AddTweetsState } from './contracts/state';
-import { TweetState } from '../tweet/contracts/state';
 
 export function* fetchTweetsRequest() {
   try {
@@ -15,7 +14,7 @@ export function* fetchTweetsRequest() {
 
 function* fetchAddTweetRequest({payload: text}: FetchAddTweetActionInterface) {
   try {
-    const newTweetData: TweetState['tweetData'] = {
+    /*const newTweetData: TweetState['tweetData'] = {
       _id: Math.random().toString(36).substr(2),
       text,
       user: {
@@ -23,8 +22,10 @@ function* fetchAddTweetRequest({payload: text}: FetchAddTweetActionInterface) {
         fullname: 'AnhaSiletskiy',
         username: 'fsoocie'
       }
-    }
-    const {data: tweetData} = yield call(TweetsApi.addTweet, newTweetData)
+    }*/
+    console.log("TEXT: " + text)
+    const tweetData = yield call(TweetsApi.addTweet, text)
+    console.log(tweetData)
     yield put(addTweet(tweetData))
     yield put(setAddTweetState(AddTweetsState.LOADED))
   }

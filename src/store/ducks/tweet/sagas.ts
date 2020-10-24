@@ -10,7 +10,7 @@ import {
 function* fetchTweetRequest({payload: tweetId}: FetchTweetDataActionInterface) {
   try {
     const tweetData = yield call(TweetsApi.fetchTweet, tweetId);
-    yield put(setTweetData(tweetData[0]));
+    yield put(setTweetData(tweetData));
   } catch (error) {
     yield put(setTweetLoadingState(LoadingState.ERROR));
   }
