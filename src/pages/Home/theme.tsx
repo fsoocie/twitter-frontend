@@ -113,6 +113,11 @@ export const useHomeStyles = makeStyles((theme: Theme) => ({
       textDecoration: 'none'
     }
   },
+  tweetHeader: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between'
+  },
   tweetAvatar: {
     width: theme.spacing(6.5),
     height: theme.spacing(6.5),

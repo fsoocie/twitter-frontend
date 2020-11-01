@@ -20,21 +20,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07d9bee2-14dc-4d2e-ad52-e5bd0d519e53" name="Default Changelist" comment="fixed fullTweet html-coding">
-      <change afterPath="$PROJECT_DIR$/src/core/axios.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/formatDate.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Notification.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/SignIn/components/LoginModal.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/SignIn/theme.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/api/authApi.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/ducks/user/actionCreators.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/ducks/user/contracts/actionCreators.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/ducks/user/contracts/state.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/ducks/user/reducer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/ducks/user/sagas.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/ducks/user/selectors.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FullTweet.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FullTweet.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ModalBlock.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ModalBlock.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Tweet.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tweet.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home/theme.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/theme.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/api/tagsApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/api/tagsApi.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/api/tweetsApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/api/tweetsApi.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/ducks/tweet/contracts/state.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/ducks/tweet/contracts/state.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/ducks/tweet/sagas.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/ducks/tweet/sagas.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/ducks/tweets/contracts/state.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/ducks/tweets/contracts/state.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/ducks/tweets/reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/ducks/tweets/reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/ducks/tweets/sagas.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/ducks/tweets/sagas.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/SignIn.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SignIn/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/rootReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/rootReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/saga.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/saga.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +67,9 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Development\Projects\twitter\twitter-frontend\src\pages\SignIn" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Development\Projects\twitter\twitter-frontend\src\store\ducks" />
     </key>
@@ -75,7 +86,9 @@
       <workItem from="1601908390853" duration="929000" />
       <workItem from="1602166143125" duration="7539000" />
       <workItem from="1602318930499" duration="13121000" />
-      <workItem from="1603474879804" duration="9015000" />
+      <workItem from="1603474879804" duration="9812000" />
+      <workItem from="1604216778865" duration="1172000" />
+      <workItem from="1604218988855" duration="14520000" />
     </task>
     <task id="LOCAL-00001" summary="added redux, finished home page html-coding">
       <created>1601811196940</created>
